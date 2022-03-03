@@ -1,0 +1,57 @@
+.flexbox {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex-body {
+  display: flex;
+  flex: 1;
+  background-color: orange;
+}
+.flex-content {
+  flex: 1;
+  background-color: orchid;
+}
+
+.flex-nav, .flex-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  background-color: red;
+}
+
+.flex-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.flexbox,
+.flex-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-nav {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .flex-body {
+    flex-direction: row;
+    flex: 1;
+  }
+}
+.flex-content {
+    flex: 1;
+  }
+.flex-nav, .flex-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+
+header { 
+    background-color: royalblue;
+}
+ footer {
+     background-color: seagreen;
+ }
